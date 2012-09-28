@@ -130,7 +130,7 @@ require_once 'common.inc.php';
 <body>
 <div id="status">
         <?php if($CurrUser):;?>
-            Hi~<span class="icon_<?php echo $CurrUser['platform']?>"><?php echo $CurrUser['username'];?></span>,[<a href="http://<?php echo HOST;?>/list" target="_blank">我的图床</a>]
+            Hi~<span class="icon_<?php echo $CurrUser['platform']?>"><?php echo $CurrUser['username'];?></span>,[<a href="http://<?php echo HOST;?>/list" target="_blank">我的图床</a>]<a href="http://<?php echo HOST;?>/home?logout">退出</a>
         <?php else:?>
         登录会更好~
             <a href="http://<?php echo HOST;?>/connect/qq/" target="_blank" class="qq" title="腾讯微博登录"></a>
